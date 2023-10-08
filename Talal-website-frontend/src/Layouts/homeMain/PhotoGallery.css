@@ -1,0 +1,151 @@
+/* CardContainer.css */
+
+/* Container styles */
+.containerPhoto {
+    margin-left: 10%;
+    width: 80%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  /* Card styles */
+  .cardPhoto {
+    margin-top: 4%;
+    margin-left: 2%;
+    margin-right: 2%;
+    width: 320px;
+    height: 260px;
+    border-radius: 12px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer; /* Add cursor pointer for better UX */
+  }
+  
+  .cardWrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: 8%;
+  }
+
+  .cardWrapperMain{
+    display: block;
+  }
+
+  .cardWrapperMainSmall{
+    display: block;
+  }
+  
+  .containerPhoto h1 {
+    font-size: 36px;
+    font-family: Abhaya Libre;
+    margin-left: 42%;
+    margin-top: 4%;
+    margin-right: 40%;
+  }
+
+  
+  
+  /* Card image styles */
+  .cardPhoto img {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s ease;
+  }
+  
+  /* Card overlay styles */
+  .card-overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.707); /* Orange overlay with 50% opacity */
+    opacity: 0;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.3s ease;
+  }
+  
+  /* Card description styles */
+  .card-description {
+    padding: 10px;
+    color: #fff;
+    display: block;
+    margin: 2%;
+    position: absolute;
+    z-index: 101;
+    background-color: rgba(0, 0, 0, 0.638);
+    bottom: -100%; /* Initially hide the description below the card */
+    left: 0;
+    right: 0;
+    border: 2px solid rgb(163, 155, 155);
+    text-align: center;
+    font-weight: bold;
+    transition: bottom 0.3s ease, margin 0.3s ease; /* Add a transition for smooth movement */
+  }
+
+  /* Card hover styles */
+  .cardPhoto:hover img {
+    transform: translateY(-20px);
+  }
+
+  .cardWrapperMain{
+    display: block;
+  }
+
+  .cardWrapperMainSmall{
+    display: none;
+  }
+  
+  .cardPhoto:hover .card-overlay {
+    opacity: 1; /* Show the overlay with full opacity on hover */
+  }
+  
+  .cardPhoto:hover .card-description {
+    bottom: 0; /* Move the description up on hover */
+    margin-top: -24px 4%; /* Change the margin on hover (example values) */
+  }
+  
+  /* Media query for smaller screens */
+  @media screen and (max-width: 768px) {
+    .containerPhoto {
+      flex-direction: column;
+      align-items: center;
+      margin-left: 4%;
+    }
+
+    .card-overlay{
+        height: 100%;
+    }
+  
+    .cardWrapper {
+      flex-direction: column;
+    }
+
+    .cardWrapperMain{
+        display: none;
+    }
+    .cardWrapperMainSmall{
+        display: block;
+        margin-top: 10%;
+    }
+
+    .card-description{
+        display: none;
+    }
+    .cardPhoto {
+      width: 100%; /* Full width for smaller screens */
+      margin-left: -4%;
+      margin-bottom: 4%;
+    }
+
+
+    .containerPhoto h1 {
+        margin-left: 40%;
+    }
+  }

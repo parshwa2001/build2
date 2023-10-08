@@ -1,0 +1,29 @@
+/* styles.css */
+
+@keyframes textGradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    100% {
+      background-position: 100% 50%;
+    }
+  }
+  
+  .gradient-text {
+    font-family: "Abhaya Libre";
+    font-size: 38px;
+    color: transparent;
+    background: linear-gradient(90deg, gray, white , silver );
+    background-clip: text;
+    -webkit-background-clip: text;
+    animation: textGradient 5s linear infinite;
+  
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adjust shadow properties as needed */
+
+    }
+
+    @media screen and (max-width:768px) {
+        .gradient-text{
+            font-size: 12px;
+        }
+    }

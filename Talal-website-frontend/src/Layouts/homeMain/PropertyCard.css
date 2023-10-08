@@ -1,0 +1,36 @@
+.card-carousel-div:hover {
+    transition: background-color 0.3s ease-in-out; /* Add a transition for background color change */
+    background-color: #363636; /* Change to the desired gray color */
+    z-index: 100; /* Set the desired z-index value */
+    color: white
+}
+
+.carousel-card-main{
+  width: 400px;
+  height: 300px;
+  margin-left: 2%;
+  margin-right: 0%;
+  border-radius: 12px;
+}
+
+.main-property-container{
+  display: block;
+}
+
+.alt-property-container{
+  display: none;
+}
+
+@media screen and (max-width:768px) {
+    .carousel-card-main{
+      width: 260px;
+      height: 280px;
+    }
+    .main-property-container{
+      display: none;
+    }
+
+    .alt-property-container{
+      display: block;
+    }
+}

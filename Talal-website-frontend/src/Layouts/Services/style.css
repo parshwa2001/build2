@@ -1,0 +1,287 @@
+
+
+.container-services {
+  position: relative;
+  overflow: hidden;
+  transform: translate(-50%, -50%);
+  margin-top: 16%;
+  margin-left: 50%;
+  width: 90%;
+  height: 800px;
+  margin-bottom: 8%;
+  color: #555;
+  background-color: #f5f5f5;
+  box-shadow: 0 30px 50px #a9a8a8;
+}
+
+.item-services {
+  width: 200px;
+  height: 300px;
+  background-position: 50% 50%;
+  display: inline-block;
+  transition: 0.8s;
+  background-size: cover;
+  position: absolute;
+  z-index: 1;
+  top: 60%;
+  left: 40%;
+  margin-right: 0%;
+  transform: translate(0, -50%);
+  border-radius: 20px;
+  box-shadow: 0 30px 50px #505050;
+}
+
+@media screen and (max-width:768px) {
+  .container-services{
+    height: 600px;
+    margin-top: 50%;
+  }
+
+  .item-services{
+    width: 140px;
+    height: 200px;
+  }
+}
+
+.item-services:nth-child(1),
+.item-services:nth-child(2) {
+  left: 0;
+  top: 0;
+  transform: translate(0, 0);
+  border-radius: 0;
+  width: 100%;
+  height: 100%;
+  box-shadow: none;
+}
+
+.content-services {
+  margin-left: 10%;
+  font-size: large;
+  color: #505050;
+  width: 80%;
+}
+
+.container-services h1{
+  font-size: larger;
+  color: aliceblue;
+  font-size: 64px;
+  font-family: Abhaya Libre;
+}
+
+.content-services p {
+  font-size: 0px;
+  color: black;
+}
+
+@media screen and (max-width : 768px) {
+  .content-services{
+ 
+  }
+  .content-services h1{
+    font-size: 24px;
+    border: black;
+    border-width: 2px;
+  }
+  .content-services p {
+    font-size: 0px;
+  }
+}
+
+.content-services
+
+.item-services:nth-child(3) {
+  left: 0px;
+}
+.item-services:nth-child(4) {
+  left: calc(50% + 220px);
+}
+.item-services:nth-child(5) {
+  left: calc(50% + 440px);
+}
+.item-services:nth-child(n + 6) {
+  left: calc(50% + 660px);
+  opacity: 0;
+}
+.item-services .content-services {
+  position: absolute;
+  top: 50%;
+  left: 100px;
+  width: 300px;
+  text-align: left;
+  padding: 0;
+  color: #eee;
+  transform: translate(0, -50%);
+  display: none;
+}
+.item-services:nth-child(2) .content-services {
+  display: block;
+  z-index: 11111;
+}
+
+@keyframes showcontent {
+  from {
+    opacity: 0;
+    transform: translate(0, 100px);
+    filter: blur(33px);
+  }
+  to {
+    opacity: 1;
+    transform: translate(0, 0);
+    filter: blur(0);
+  }
+} 
+.item-services {
+  font-size: 50px;
+  font-weight: bold;
+  opacity: 0;
+  animation: showcontent 1s ease-in-out 1 forwards;
+}
+
+@media screen and (max-width:768px) {
+  .content-services{
+    font-size: small;
+    margin-left: -20%;
+  }
+}
+
+.item-services .des-services {
+  font-size: 13px;
+  margin: 20px 0;
+  opacity: 0;
+  animation: showcontent 1s ease-in-out 0.3s 1 forwards;
+}
+.item-services button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  opacity: 0;
+  animation: showcontent 1s ease-in-out 0.6s 1 forwards;
+  transition: 0.5s;
+}
+
+/* Center the container vertically and horizontally */
+.container-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 10%;
+  padding: 6%;
+  border-radius: 12px;
+  margin-top: -20%;
+  height: auto; /* Adjust to your desired height */
+  background-color: #f0f0f0; /* Off-white background color */
+}
+
+@media screen and (max-width:768px) {
+  .container-content{
+    margin-top: -80%;
+  }
+}
+
+/* Style for the title */
+.title-content {
+  font-size: 24px; /* Adjust the font size as needed */
+  font-weight: bold;
+  text-align: center;
+  position: relative; /* Relative positioning for pseudo-element */
+}
+
+/* Add an underline animation to the title */
+.title-content::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -5px; /* Adjust the distance of the underline */
+  width: 0;
+  height: 2px; /* Underline height */
+  background-color: #007bff; /* Underline color */
+  transition: width 0.3s ease-in-out; /* Animation duration and easing */
+}
+
+/* Hover effect for the underline */
+.title-content:hover::after {
+  width: 100%; /* Full width on hover */
+  left: 0; /* Align to the left on hover */
+}
+
+/* Style for the description */
+.description-content {
+  padding: 20px; /* Add padding around the description */
+  border: 1px solid #ccc; /* Gray border */
+  background-color: #fff; /* White background color */
+  text-align: center;
+  border-radius: 5px; /* Add rounded corners */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional box shadow */
+}
+
+/* Style for the description text */
+.description-content p {
+  font-size: 16px; /* Adjust the font size as needed */
+  line-height: 1.4; /* Adjust line height for readability */
+}
+
+
+.item-services button :hover {
+  background-color: #bac383;
+}
+
+
+
+.buttons-services {
+  position: absolute;
+  bottom: 30px;
+  z-index: 222222;
+  text-align: center;
+  width: 100%;
+}
+
+
+.buttons-services button {
+  width: 50px;
+  height: 50px;
+  border: 1px solid #555;
+  transition: 0.5s;
+}
+
+.buttons-services-main-div button{
+ background-color: black;
+ border-radius: 50%;
+ margin-left: -10%;
+}
+
+@media screen and (max-width : 768px) {
+  .buttons-services{
+    margin-left: 4%;
+  }
+  .buttons-services button{
+    width: 30px;
+    height: 30px;
+    margin-right: 10%;
+  }
+
+  .buttons-services button :hover{
+    background-color: #bac383;;
+  }
+}
+
+.buttons-services button:hover {
+  background-color: #bac383;
+}
+
+
+/* CSS */
+.text-container {
+  overflow: hidden; /* Hide overflowing content */
+  position: relative; /* Position for absolute child */
+}
+
+.text {
+  position: absolute;
+  top: -100%; /* Initially, position the text above the container */
+  transition: top 0.5s ease; /* Add a smooth transition effect */
+}
+
+.text-container:hover .text {
+  top: 0; /* On hover, move the text down to its original position */
+}

@@ -1,0 +1,38 @@
+.testimonial-div{
+    background-color: rgba(16, 16, 28, 0.533);
+    height: 100px;
+}
+
+.para-client{
+    font-size: 32px;
+}
+
+.visibility-seen{
+    display: block;
+}
+
+.heading-class h1{
+  margin-left: 40%;
+}
+
+@media screen and (max-width : 768px) {
+    .para-client{
+        font-size: 24px;
+    }
+    .visibility-seen{
+        display: none;
+    }
+
+    .heading-class h1 {
+        margin-left: 40%;
+    }
+
+    .heading{
+        font-size: 24px;
+        margin-left: 20%;
+        margin-bottom: 4%;
+    }
+}
+
+
+

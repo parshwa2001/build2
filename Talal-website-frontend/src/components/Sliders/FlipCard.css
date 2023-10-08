@@ -1,0 +1,139 @@
+
+  
+  .div-flip-cards {
+    width: 100%;
+    height: auto;
+    margin-left: 6%;
+    margin-right: 2%;
+    margin-bottom: 10%;
+    overflow: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+  }
+  
+
+  .main-div{
+    box-shadow: 20px  20px 20px 20px rgba(139, 136, 136, 0.357);
+    box-shadow: 30px  30px 0px rgba(137, 132, 132, 0.357);
+ 
+  }
+  .div-flip-cards:hover > .card {
+    cursor: pointer;
+    transform: rotateY(180deg);
+  }
+
+  .card:hover{
+    cursor: pointer;
+    transform: rotateY(180deg);
+  }
+  
+  .card {
+    height: 480px;
+    width: 300px;
+    margin-left: 3%;
+    margin-top: 1%;
+    margin-bottom: 2%;
+    margin-right: 3%;
+    position: relative;
+    transition: transform 1500ms;
+    transform-style: preserve-3d;
+    border: 3px solid rgb(104, 107, 109);
+  }
+  
+  .front,
+  .back {
+    height: 410px;
+    width: 260px;
+    border-radius: 2rem;
+    position: absolute;
+    backface-visibility: hidden;
+  }
+  
+  .front {
+    
+  }
+  
+  .back {
+    background-color: #3a3a3a36;
+    margin-top: 8%;
+    margin-left: 6%;
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+  }
+
+  .back h1{
+    font-size: 28px;
+    font-family: Abhaya Libre;
+    font-weight: bolder;
+    color: black;
+    margin-top: 12%;
+  }
+
+  .main-div h2{
+    font-size: 64px;
+    color: rgb(56, 51, 51);
+    margin-top: 6%;
+    margin-left: 44%;
+    font-family: Abhaya Libre;
+
+  }
+
+  .main-div p{
+    font-size: 24px;
+    margin-left: 34%;
+    color: gray;
+    margin-top: -6%;
+    margin-top: 4%;
+    font-family: Abhaya Libre;
+    margin-bottom: 4%;
+  }
+
+  .back p{
+    font-size: 16px;
+    margin-bottom: 4%;
+    margin-top: -24%;
+    margin-left: 4%;
+    margin-right: 4%;
+    font-family: Abhaya Libre;
+  }
+
+
+  @media screen and (max-width : 768px) {
+
+    .card{
+      margin-left: 2%;
+      width: 90%;
+    }
+    .main-div h2{
+      margin-left: 28%;
+      font-size: 36px;
+    }
+
+    .main-div p{
+      margin-left: 16%;
+      font-size: 16px;
+    }
+
+    .front{
+      margin-left: -10%;
+    }
+    .back p {
+      margin-left: 10%;
+      font-size: 13px;
+      margin-bottom: 2%;
+      margin-right: 10%;
+    }
+     .back h1{
+      font-size: larger;
+
+     }
+
+    
+    
+  }

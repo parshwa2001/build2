@@ -1,0 +1,140 @@
+/* StaticBackground.css */
+
+.static-background {
+    background-image: url('https://images.hdqwalls.com/download/tokyo-skycrapper-building-sunset-cityscape-b7-1400x900.jpg'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* This keeps the background fixed even when scrolling */
+    width: 100%;
+    height: 100%; /* Adjust the height as needed */
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white; /* Text color for content on top of the background */
+    font-size: 24px; /* Adjust font size as needed */
+    text-align: center;
+  }
+
+  .white-background {
+    background-color:aliceblue;
+    width: 100%;
+    height: 100px;
+    color: aliceblue;
+  }
+
+
+  .static-background2 {
+    background-image: url('https://images.hdqwalls.com/download/tokyo-skycrapper-building-sunset-cityscape-b7-1400x900.jpg'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* This keeps the background fixed even when scrolling */
+    width: 100%;
+    height: 100%; /* Adjust the height as needed */
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+     /* Text color for content on top of the background */
+    font-size: 24px; /* Adjust font size as needed */
+    text-align: center;
+  }
+  
+  /* Style your content within the .static-background div as needed */
+
+  .form-form-div{
+    width: 60%;
+    margin-left: 20%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: aliceblue;
+    border-radius: 12px;
+    box-shadow: 4px 4px 4px 4px gray;
+  }
+  
+  .label-input-div{
+    margin: 2%;
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin-left: 15%;
+    color: black;
+    font-family: Abhaya Libre;
+  }
+
+  .label-input-div label{
+    margin-left: -30%;
+  }
+
+  .label-input-div input{
+    border-radius: 36px;
+    padding: 2%;
+    border: 2px solid rgba(128, 128, 128, 0.577);
+    box-shadow: 4px 4px 4px 4px gray ;
+    padding-left: 4%;
+    padding-right: 4%;
+    font-size: 20px;
+
+  }
+
+
+  .label-input-div textarea{
+    border-radius: 36px;
+    padding: 2%;
+    border: 2px solid rgba(128, 128, 128, 0.577);
+    box-shadow: 4px 4px 4px 4px gray ;
+  }
+
+  .label-input-div button{
+    color: white;
+    background-color: black;
+    width: 30%;
+    margin-left: 36%;
+    border-radius: 36px;
+  }
+  .static-background h1 {
+    font-size: 64px;
+    font-family: Abhaya Libre;
+    margin: 6%;
+  }
+
+  .form-div{
+    width: 100%;
+    height: auto;
+    margin: 8%;
+
+  }
+
+  @media screen and (max-width : 768px) {
+    .static-background h1{
+        font-size: 36px;
+    }
+
+    .form-form-div{
+       margin-left: 4%;
+       width: 90%;
+    }
+
+    .label-input-div textarea{
+      font-size: medium;
+      padding: 4%;
+    }
+
+    .label-input-div label{
+        font-size: medium;
+        margin-left: 2%;
+    }
+    .label-input-div input{
+        font-size: small;
+        padding: 2%;
+
+    }
+
+    .label-input-div button{
+        width: 50%;
+        font-size: medium;
+        margin: 4%;
+        margin-left: 24%;
+    }
+  }

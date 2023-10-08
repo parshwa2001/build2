@@ -1,0 +1,90 @@
+/* Sidebar.css */
+
+/* Base styles */
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+  
+  /* Sidebar styles */
+  
+  .sidebar {
+    position: fixed;
+
+    top: 0;
+    right: -100%; /* Initially hidden off-screen */
+    height: 800px;
+    position: fixed;
+    overflow: hidden;
+    max-width: 100%; /* Takes 50% width on larger screens */
+    background-color: #333;
+    color: white;
+    transition: right 0.3s ease-in-out;
+    z-index: 1;
+    opacity: 50;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+  }
+ 
+  @media screen and (max-width:768px) {
+    .sidebar{
+        width: 100%;
+    }
+  }
+.sidebarbreakline{
+    width: 100%;
+    height: 2px;
+    color: rgba(149, 109, 36, 0.69);
+}
+
+
+.sidebar a{
+    font-family: Abhaya Libre;
+    font-size: 1.5rem;
+    margin-left: 40%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+
+.sidebar button {
+    background-color: inherit; /* Button background color */
+    color: #f7f1f1; /* Button text color */
+    border: none;
+    padding: 10px 20px; /* Adjust padding as needed */
+    cursor: pointer;
+    margin-top: 16%;
+    margin-left: 80%;
+    width: 20%;
+  }
+
+
+  .sidebar button ,a:hover{
+    color:rgba(255, 166, 0, 0.69);
+  }
+
+
+
+  
+
+  
+  .sidebar.open {
+    right: 0; /* Display the sidebar */
+    z-index: 999; /* Ensure the sidebar overlays other content */
+  }
+  
+  .toggle-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+  }
+
+
+  
